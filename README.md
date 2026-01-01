@@ -1,1 +1,144 @@
 # Birthday---surprise
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Tasnif 🩷</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(120deg, #ffd1dc, #fbc2eb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Georgia', serif;
+  overflow: hidden;
+}
+
+.heart {
+  position: absolute;
+  font-size: 20px;
+  animation: float 6s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {transform: translateY(100vh); opacity: 0;}
+  50% {opacity: 1;}
+  100% {transform: translateY(-10vh); opacity: 0;}
+}
+
+.card {
+  background: rgba(255,255,255,0.95);
+  padding: 45px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+  animation: fadeIn 2.5s ease;
+  max-width: 420px;
+}
+
+h1 {
+  color: #e75480;
+  font-size: 2.6em;
+  animation: glow 2s infinite alternate;
+}
+
+p {
+  font-size: 1.15em;
+  color: #444;
+  line-height: 1.7;
+}
+
+.click-text {
+  margin-top: 25px;
+  font-size: 1em;
+  color: #e75480;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+}
+
+.hidden-message {
+  display: none;
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #e75480;
+  font-style: italic;
+  animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(40px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes glow {
+  from {text-shadow: 0 0 10px #ff9aa2;}
+  to {text-shadow: 0 0 25px #ff5e78;}
+}
+
+@keyframes pulse {
+  0% {opacity: 0.5;}
+  50% {opacity: 1;}
+  100% {opacity: 0.5;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- Background Music -->
+<audio autoplay loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_3b7a2f43a5.mp3" type="audio/mp3">
+</audio>
+
+<script>
+for(let i=0;i<20;i++){
+  let heart=document.createElement("div");
+  heart.innerHTML="🩷";
+  heart.className="heart";
+  heart.style.left=Math.random()*100+"vw";
+  heart.style.animationDuration=(4+Math.random()*4)+"s";
+  heart.style.fontSize=(16+Math.random()*20)+"px";
+  document.body.appendChild(heart);
+}
+
+function revealMessage(){
+  document.getElementById("hidden").style.display="block";
+}
+</script>
+
+<div class="card">
+  <h1>Happy Birthday Tasnif 🩷</h1>
+
+  <p>
+    At this quiet midnight hour 🌙  
+    I hope this little surprise  
+    reaches your heart gently ✨
+  </p>
+
+  <p>
+    You bring a softness  
+    that words often fail to explain,  
+    yet the heart always understands 💗
+  </p>
+
+  <p>
+    May this year hold warmth,  
+    calm happiness,  
+    and moments that feel like home 🌸
+  </p>
+
+  <div class="click-text" onclick="revealMessage()">
+    Click here… there’s something more 🩷
+  </div>
+
+  <div id="hidden" class="hidden-message">
+    “You matter to me more than you know…  
+    and some feelings are too precious to rush into words.” 💫
+  </div>
+</div>
+
+</body>
+</html>
