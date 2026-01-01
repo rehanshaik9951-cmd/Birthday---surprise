@@ -157,6 +157,14 @@ function revealMessage(){
     delay += 1800; // 1.8s between each line
   });
 }
+    .love-line {
+  display: none;
+  font-size: 1.3em;
+  color: #e75480;
+  font-style: italic;
+  margin-top: 15px;
+  font-family: 'Dancing Script', cursive;
+}
 </div>
   </div>
 </div>
