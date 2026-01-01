@@ -105,8 +105,6 @@ for(let i=0;i<20;i++){
 }
 
 function revealMessage(){
-  document.getElementById("hidden").style.display="block";
-}
 </script>
 
 <div class="card">
