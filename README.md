@@ -137,6 +137,14 @@ function revealMessage(){
   <div id="hidden" class="hidden-message">
     “You matter to me more than you know…  
     and some feelings are too precious to rush into words.” 💫
+    <div id="hidden" class="hidden-message">
+  <p class="love-line">Tum woh roshni ho jis ke baghair raat adhuri hai 🌙</p>
+  <p class="love-line">Tum woh khwab ho jo har din haqeeqat ban jaye ✨</p>
+  <p class="love-line">Tum woh khushboo ho jo baharon mein bhi bas tumhari rehti hai 🌹</p>
+  <p class="love-line">Meri dhadkan tumhare naam ke baghair mukammal nahi ❤️</p>
+  <p class="love-line">Meri har saans tumhare ishq se roshan hai 🩷</p>
+  <p class="love-line">Meri mohabbat tumhare liye la-zawal aur hamesha ke liye hai 💫</p>
+</div>
   </div>
 </div>
 
